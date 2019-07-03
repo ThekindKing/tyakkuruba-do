@@ -262,16 +262,19 @@ footer li{
 @media (max-width: 670px) {
   header {
     width: 100%;
-    /* position: static; */
-    margin-bottom: 45px;
   }
   header h2{
     margin: 0px;
+    padding: 5px 0px 0px 10px;
+    color:#808080;
   }
   .utility{
     margin: 0px;
     position: static;
     text-align: right;
+  }
+  .utility p{
+    font-size:0.83em;
   }
 .insta_btn2{
     position: relative;
@@ -294,6 +297,7 @@ footer li{
   .Introduction img{
     width:100%;
     height: auto;
+    margin-top: 5px;
     margin-bottom: 20px;
   }
 .ten{
@@ -341,10 +345,12 @@ footer li{
 .topics h1{
   text-align: center;
 }
-.topics span{
-  display: none;
+.topics h1 span{
+  display:block;
+  font-size:15px;
 }
    footer ul{
     width:100%;
   }
 }
+
