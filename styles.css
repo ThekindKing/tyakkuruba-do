@@ -1,315 +1,350 @@
 body {
   margin: 0;
-  background: #f5f3ef;
-  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
-  box-sizing: border-box;
+background: #f5f3ef;
+   font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
  }
+header {
+  margin: 0 auto;
+  width: 960PX;
+  height: 100px;
+  position: relative;
+}
 
-header{
-  width: 100%;
-  height: 50px;
-  background-color: #000000;
-  position:fixed;
-  z-index:1;
+header img{
+  width: 100px;
+  height: 100px;
+  float: left;
+  /* margin-left: 30px; */
 }
-header h4{
-  color: #fff;
+
+.utility{
+  margin-top: 10px;
+  position: absolute;
+  top:0px;
+  right: 10px;
+}
+.utility p{
   margin: 0px;
-  padding-left: 50px;
-  line-height:50px;
-  font-size: 20px;
+  font-size: 1.1em;
+  color: #808080;
 }
-/* メール */
-.mail-btn{
-  display: inline-block;
-  color: #fff;
-  float: right;
-  padding-right: 20px;
+.utility p strong{
+  font-size: 1.25em;
+  background: linear-gradient(transparent 70%, #a8eaff 70%);
 }
-.mail-btn .mail{
-  position: relative;/*相対配置*/
-  display: inline-block;
-  top: 8px;
-  width: 35px;/*幅*/
-  height: 35px;/*高さ*/
-}
-.mail-btn .fa-envelope {/*アイコン*/
-  color: #FFF;/*白に*/
-  position: relative;/*z-indexを使うため*/
-  z-index: 2;/*グラデーションより前に*/
-  font-size: 20px;/*アイコンサイズ*/
-  line-height: 35px;/*高さと合わせる*/
+section{
+  margin: 0 auto;
+  width: 960PX;
 }
 /* インスタ */
-.insta_btn {
+.insta_btn2{/*ボタンの下地*/
+  color: #FFF;/*文字・アイコン色*/
+  border-radius: 7px;/*角丸に*/
+  position: relative;
   display: inline-block;
-  text-align: center;/*中央揃え*/
-  /* color: #2e6ca5;/*文字色*/ */
-  /* font-size: 20px;/*文字サイズ*/ */
-  text-decoration: none;/*下線消す*/
-  float: right;
-  padding-right: 70px;
-}
-
-.insta_btn:hover {/*ホバー時*/
-  color:#668ad8;/*文字色*/
-  transition: .5s;/*ゆっくり変化*/
-}
-
-.insta_btn .insta{/*アイコンの背景*/
-  position: relative;/*相対配置*/
-  display: inline-block;
-  top: 8px;
-  width: 35px;/*幅*/
   height: 35px;/*高さ*/
+  width: 190px;/*幅*/
+  text-align:center;/*中身を中央寄せ*/
+  font-size: 30x;/*文字のサイズ*/
+  line-height: 35px;/*高さと合わせる*/
   background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
   background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
   overflow: hidden;/*はみ出た部分を隠す*/
-  border-radius: 13px;/*角丸に*/
-
-
+  text-decoration:none;/*下線は消す*/
+  margin-top: 0px;
+  float:right;
+  margin-right: 30px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
-.insta_btn .insta:before{/*グラデーションを重ねるため*/
-  content: '';
-  position: absolute;/*絶対配置*/
-  top: 23px;/*ずらす*/
-  left: -18px;/*ずらす*/
-  width: 60px;/*グラデーションカバーの幅*/
-  height: 60px;/*グラデーションカバーの高さ*/
-  background: -webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
-  background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);/*グラデーション②*/
-}
-
-.insta_btn .fa-instagram {/*アイコン*/
-  color: #FFF;/*白に*/
-  position: relative;/*z-indexを使うため*/
-  z-index: 2;/*グラデーションより前に*/
-  font-size: 25px;/*アイコンサイズ*/
-  line-height: 35px;/*高さと合わせる*/
-}
-/* 問い合わせ */
-.apo{
-  float: right;
-  color: #fff;
-  padding-right: 30px;
-  line-height: 50px;
-}
-/* トップ画像 */
-.top{
-  width: 100%;
-  height: 200px;
-  background-image: url("img/top 2.png");
-  background-size:cover;
-  padding-bottom: 50px;
-}
-/* profile */
-.profile{
-  width: 25%;
-  height: 670px;
-  border: 2px solid #000000;
-  border-radius:10px;
-  margin: -70px 0px 0px 70px;
-  text-align: center;
-  background-color: #fff;
-}
-.profile img{
-  margin-top: 35px;
-  width: 40%;
-  border-radius:50%;
-}
-.profile p{
-  margin: 5px 0px;
-  color: #BBBBBB;
-  font-size: 14px;
-}
-.profile a{
-  text-decoration: none;
-}
-.pr-btn{
-  margin: 10px 0px;
-  width: 80%;
-  margin: 0 auto;
-}
-.pr-btn ul{
-  list-style: none;
-  display: flex;
-  /* flex-direction：row; */
-  justify-content:space-between;
-  padding-left: 0px;
-}
-.pr-btn li{
-  border-radius:20px;
-  padding: 5px 30px;
-  border: 1px solid #C0C0C0;
-  cursor: pointer;
-  font-size: 14px;
- font-weight: 600;
-}
-.blue {
-  background-color: #0057ff;
-  color: #fff;
-}
-.blue a{
-  color: #fff;
-}
-.white a{
-  color: #000000;
-}
-.PR {
-  text-align:left;
-  margin:0 auto;
-  width: 80%;
-}
-.PR p{
-  color:#000000;
-
-}
-.display{
-  display: flex;
-  flex-direction：row;
-}
-.Contents{
-margin:30px 0px 0px 50px;
-width: 60%;
-
-}
-.Contents-top ul{
-  padding:0px;
-  list-style: none;
-  display: flex;
-  flex-direction：row;
-}
-
-.Contents-top a{
-  /* margin-right: 20px; */
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 700;
-  margin: 0 8px;
-  color:	#808080;
-  text-decoration: none;
-}
-.Contents-top a:nth-child(4){
-  border-bottom: 2px solid #333;
-  color: #333;
-}
-
-.fa-grin-squint{
-  float: right;
-  font-size: 100px;
-  margin: -60px 80px 0 0;
-  color: #99FFCC;
-  transform: rotate(20deg);  /* 2D(平面)で回転 */
-}
-/* 説明 */
-.about{
-  text-align:center;
-}
-.about h1{
-  font-size:27px;
-}
-.about h2{
-  font-size:23px;
-}
-.about-content{
-  background-color: #b3d4fc;
-  border-radius: 10px;
-  padding-bottom:30px;
-}
-.about-content h2{
-  padding-top: 30px;
-}
-/* footer */
-.footer {
-  position: relative;
-  overflow: hidden;
-  /* margin: 10% 0; */
-  padding: 100px 0;
-}
-
-.contents_inner {
-  box-sizing: boder-box;
-  width: 100%;
-  max-width:90%;
-  height: 100%;
-  margin: 0 auto;
-  padding: 100px 10px 120px;
-  color: #fff;
-  /* text-align: center; */
-}
-.contents_inner ul{
-  list-style: none;
-  padding: 0px;
-}
-.contents_inner a{
-  text-decoration: none;
-  color: #fff;
-}
-.contents_inner li{
-  margin: 10px 10px;
-  display: inline-block;
-
-}
-.contents_inner li:hover{
-  border-bottom:  1px solid #fff;
-}
-.footer:before {
+.insta_btn2:before{/*グラデーション②*/
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 200%;
-  height: 80%;
-  margin: 2% -10% 0;
-  background: #011931;
-  -webkit-transform-origin: right center;
-  -ms-transform-origin: right center;
-  transform-origin: right center;
-  -webkit-transform: rotate(-4deg);
-  -ms-transform: rotate(-4deg);
-  transform: rotate(-4deg);
-  z-index: -1;
-}
-.contents_inner h1{
-  float:right;
-  margin: 15px 30px 0 0;
-  font-size: 45px;
-}
-.contents_inner p{
-  margin-top: 50px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #fff;
-}
-@media (max-width: 670px) {
-  header h4{
-    padding-left:20px;
-  }
- .apo{
-   display: none;
- }
- .insta_btn{
-   padding:0px 10px;
- }
- .mail-btn{
-   padding: 0px;
- }
- .profile{
-   display: none;
- }
- .Contents{
-   margin-right:10px;
-   margin-left:10px;
-   width:95%;
- }
- .Contents-top a{
-   margin-right: 0px;
- }
- .Comparison a{
-   margin-right: 0px;
- }
- .about span{
-   display: block;
- }
+  width: 100%;/*全体を覆う*/
+  height: 100%;/*全体を覆う*/
+  background: -webkit-linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+  background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
 }
 
+.insta_btn2 .fa-instagram{/*アイコン*/
+  font-size: 25px;/*アイコンサイズ*/
+  position: relative;
+  top: 4px;/*アイコン位置の微調整*/
+}
+
+.insta_btn2 span {/*テキスト*/
+  display:inline-block;
+  position: relative;
+  transition: .5s
+}
+
+.insta_btn2:hover span{/*ホバーで一周回転*/
+  -webkit-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+/* お店紹介 */
+.Introduction{
+  text-align: center;
+}
+.Introduction strong{
+  font-size:30px;
+  background: linear-gradient(transparent 70%, #a8eaff 70%);
+}
+.Introduction p{
+  margin-top: 0px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+}
+.Introduction img{
+  margin-top: 20px;
+  width: 960px;
+  height: 500px;
+}
+ /* メニュー */
+ .MENU span{
+   color: #aaa;
+   font-size: 15px;
+ }
+ .MENU strong{
+   font-size: 20px;
+   border-bottom: 2px dotted #aaa;
+ }
+ .box8 {
+    padding: 0px 0.5em;
+    margin-bottom: 10px;
+    color: #232323;
+    border-left: solid 8px #a8eaff;
+}
+.box8 p {
+    margin: 0;
+    padding: 0;
+}
+.MENU h5{
+  margin: 0px;
+  font-size: 18px;
+}
+.MENU h3{
+  color: #808080;
+  font-size: 1.5em;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #aaa;
+  margin-bottom: 5px;
+
+}
+.MENU ul{
+  display: flex;
+  flex-wrap: nowrap;
+  /* flex-direction：row; */
+  list-style:none;
+  padding: 0;
+  margin-bottom: 7px;
+  margin-top: 0px;
+}
+.MENU li{
+  margin-bottom:0px;
+  width: 22%;
+
+}
+.MENU li:nth-child(n + 2){
+  padding-left: 35px;
+}
+.MENU img{
+  width: 100%;
+  border: 4px solid #696969;
+  margin-bottom: 0px;
+}
+.MENU p{
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.MENU h4{
+  margin: 5px;
+}
+.MENU h4:last-child{
+  display: inline-block;
+  padding: 7px 20px;
+  background-color: #CC9966;
+  color: #fff;
+  float: right;
+  margin: 0px;
+  border-radius:60px
+}
+
+.topics{
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.topics h1{
+  color: #aaa;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #333;
+}
+.topics h1 span{
+  font-size: 0.8em;
+  padding-left: 20px;
+}
+.topics ul{
+  list-style: none;
+  display: flex;
+  flex-wrap:wrap;
+  margin-left: -13px;
+  margin-bottom: 30px;
+  padding: 0px;
+}
+.topics li{
+  margin-bottom: 10px;
+  margin-left: 14px;
+  width: 23%;
+  background-color: #fff;
+}
+.topics a{
+  text-decoration: none;
+  color: #333;
+  font-size: 0.8em;
+}
+.topics li img{
+  width: 100%;
+}
+.topics p{
+  margin: 5px;
+}
+
+/* 地図 */
+.ggmap {
+margin-top: 25px;
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+footer{
+  background: url(https://www.pronto.co.jp/common/img/ft_bg.png);
+  padding-top: 15px;
+  color: #fff;
+  padding-bottom: 15px;
+}
+
+ footer ul{
+  list-style: none;
+  /* display:inline-block; */
+  display: flex;
+  justify-content: center;
+  width: 960px;
+  margin: 0 auto;
+  font-weight: 400;
+  padding: 0px;
+}
+footer li{
+  padding: 0px 10px;
+}
+.Responsive{
+  display: none;
+}
+/* レスポンシブ対応 */
+@media (max-width: 670px) {
+  header {
+    width: 100%;
+    /* position: static; */
+    margin-bottom: 45px;
+  }
+  header h2{
+    margin: 0px;
+  }
+  .utility{
+    margin: 0px;
+    position: static;
+    text-align: right;
+  }
+.insta_btn2{
+    position: relative;
+    right:0px;
+    bottom: 0px;
+    margin-right: 0px;
+  }
+.utility span{
+    display: none;
+  }
+.Responsive{
+    display:block;
+  }
+  header img{
+    display: none;
+  }
+  section{
+    width:100%;
+  }
+  .Introduction img{
+    width:100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+.ten{
+    display: none;
+  }
+  .MENU  h3{
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .MENU  h3 span{
+    display:none;
+  }
+  .MENU h2{
+    color: #808080;
+    font-size: 1.5em;
+    float: right;
+    margin-right: 20px;
+  }
+  .MENU strong{
+    display: block;
+    margin-bottom: 10px;
+  }
+  .MENU li{
+    width:45%;
+  }
+  .MENU li:nth-child(n + 3){
+    display: none;
+  }
+  .karennda{
+    border-width:0;
+    width:100%;
+    height:300px;
+    frameborder:0;
+    scrolling:no;
+  }
+  .clia{
+    display: none;
+  }
+  .topics li {
+    width:45%;
+  }
+.topics{
+  margin-top: 60px;
+}
+.topics h1{
+  text-align: center;
+}
+.topics span{
+  display: none;
+}
+   footer ul{
+    width:100%;
+  }
+}
